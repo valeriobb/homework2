@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+     /* Colore di sfondo */
+     background: #8abbe4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Colore dei link */
+    transition: color 0.3s;
+
+}
+
+.page-links {
+    text-align: center;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0056b3; /* Colore dei link al passaggio del mouse */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #ffffff;
+}
+
+thead th,
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #dee2e6; /* Colore del bordo delle celle */
+}
+
+thead th {
+    background-color: #007bff; /* Colore di sfondo dell'intestazione */
+    color: #ffffff; /* Colore del testo dell'intestazione */
+    text-align: left;
+}
+
+tbody td {
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* Colore di sfondo delle righe pari */
+}
+
+table img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end; /* Allinea le azioni a destra */
+    margin-top: 10px;
+}
+
+.actions a {
+    margin-left: 10px; /* Aggiunge uno spazio tra le azioni */
+}

@@ -1,0 +1,87 @@
+/* Reset dei margini e dei padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stile del body */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #8abbe4;
+    color: #333;
+}
+
+/* Stile del container principale */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile del form */
+.saghe form {
+    margin-top: 20px;
+}
+
+.saghe form div {
+    margin-bottom: 20px;
+}
+
+.saghe input[type="text"],
+.saghe textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.saghe input[type="file"] {
+    margin-top: 10px;
+}
+
+.saghe input[type="submit"] {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.saghe input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Stile per la scritta "Modifica" */
+.saghe p {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+    
+.navigation-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.navigation-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navigation-links a:hover {
+    color: #0056b3;
+}
