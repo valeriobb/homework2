@@ -1,0 +1,489 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background */
+body {
+    background: #8abbe4;
+}
+
+/* Link */
+.link {
+    text-decoration: none;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuisce uniformemente gli spazi tra i contenitori */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    /*opacity: 0.2;*/
+    padding: 10px 5%;
+    background: rgb(56, 126, 218);
+    border-bottom: solid;
+}
+
+.header:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.logo-container {
+    flex: 1; /* Flessibile */
+}
+
+.navbar-container {
+    flex: 2; /* Flessibile */
+}
+
+.login-container {
+    flex: 1; /* Flessibile */
+    text-align: right; /* Allinea il contenuto a destra */
+}
+
+.login {
+    margin-right: 20px; /* Aggiunge margine a destra per separare dal bordo della finestra */
+}
+
+.header img {
+    /*opacity: 0;
+    animation: slideRight 1.1s ease forwards;*/
+    margin-right: 15%;
+}
+
+.login {
+    text-align: center;
+    margin-left: auto;
+    /*margin-right: 5%;*/
+}
+
+.login .profilo {
+    color: #000000;
+    margin-left: 20px;
+    font-style: oblique;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login .log {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: #0011ff;
+    background-color: #f12424;
+    border: solid;
+}
+
+.login .log:hover {
+    background-color: #0011ff; /* Cambia il colore di sfondo al passaggio del mouse */
+    color: #ffffff; /* Cambia il colore del testo al passaggio del mouse */
+}
+
+.login .logout {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ff0000;
+    font-size: 0.9rem;
+}
+
+
+.navbar ul {
+    list-style: none;
+    background: transparent;
+    margin-left: auto;
+    margin-right: 5%;
+    display: flex; /* Utilizziamo Flexbox per allineare gli elementi */
+}
+
+.navbar ul li {
+    margin-right: 20px; /* Aggiungiamo uno spazio tra le opzioni */
+}
+
+.navbar ul li:last-child {
+    margin-right: 0; /* Rimuoviamo lo spazio dall'ultimo elemento */
+}
+
+.navbar ul li a {
+    font-size: 1rem;
+    color: #000000;
+    text-decoration: none;
+    transition: .3s;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px; /* Aggiungiamo spazio intorno al testo */
+    /*opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.15s * var(--i));*/
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    color: #000a97;
+}
+
+.navbar ul li ul.dropdown li {
+    display: block;
+    margin-top: 20px;
+}
+
+.navbar ul li ul li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar ul li ul.dropdown {
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    z-index: 999;
+    display: none;
+}
+
+.navbar ul li a:hover {
+    background: transparent;
+}
+
+.navbar ul li:hover ul.dropdown {
+    display: block;
+}
+
+
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    color: #000a97;
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;        
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-170px);
+        opacity: 0;        
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.link{
+    text-decoration: none;
+    color:#000000;
+}
+
+.backindex{
+    margin-top: 20px;
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+    /*background: blueviolet;*/
+    margin-top: 180px;
+    padding-top: 20px;
+    align-content: center;
+    text-align: center;
+}
+
+.desc_saga{
+    background: #ffffff;
+    border-radius: 15px;
+    border: solid;
+    padding: 20px;
+    /*width: 50%;
+    height: 50%;*/
+    margin: 10px ;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+
+}
+
+.title{
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+td{
+    font-style: oblique;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #1925cc;
+    font-size: 20px;
+}
+
+tr:hover {
+    background-color: #d6d6d6;
+}
+
+
+.trama{
+    border-top: solid;
+    border-bottom: transparent;
+    margin-top: 150px;
+}
+
+.trama h1{
+   /* top: 30%;*/
+   background:transparent;
+   font-size: 50px;
+   font-style: italic;
+   margin:50px;
+   margin-top: 130px;
+}
+
+.trama h2{
+    text-align: left;
+    margin-left: 50px;
+}
+
+.trama p{
+    background: #ffffff;
+    border-radius: 15px;
+    border: solid;
+    padding: 20px;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-style: oblique;
+    
+    
+}
+
+
+
+.elenco{
+    
+    width: 20%;
+    /*border:solid;*/
+    margin-left: 50px;
+}
+
+
+.elenco h2{
+    text-align: left;
+}
+
+.page ul{
+    margin-left: 20px;
+    list-style:inside;
+}
+
+.page ul li{
+    text-align: left;
+    font-size: 20px;
+   /* font-style: oblique;*/
+    font-family:cursive;
+    font-weight: 300;
+    
+}
+
+.cornice{
+    width: 300px;
+    overflow: hidden;
+    margin-left: 250px; /*margin-left:370px;*/
+    margin-top: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    
+}
+
+.container{
+    width:1500px;
+    display: flex;
+    position: relative;
+    animation: slider 18s infinite;
+    animation-delay: 3s;
+
+}
+
+.slide{
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+
+.slide img{
+    width: 300px;
+    height: 300px;
+}
+
+.recensione{
+    width: 600px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.rec1 >*{
+    float: right;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.rec1 label{
+    height: 40px;
+    width: 20px;
+    display: block;
+    position: relative;
+    cursor: pointer;   
+}
+
+.rec1{
+    margin-right: 180px;
+}
+
+.rec1 label::after{
+    transition: all 0.4s ease-out;
+    -webkit-font-smoothing:antialiased;
+    position: absolute;
+    content: "☆";
+    color: #444;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 70px;
+    -webkit-animation: 1s pulse ease;
+    animation: 1s pulse ease;
+}
+
+.rec1 label:hover::after{
+    color: #5e5e5e;
+    text-shadow: 0 0 15px #5e5e5e;
+}
+
+.rec1 input{
+    display: none;
+}
+
+.rec1 input:checked + label::after,
+.rec1 input:checked ~ label::after{
+    content: "★";
+    color: #d0ff00;
+    text-shadow: 0 0 20px #d0ff00;
+}
+
+.footer{
+    background:#000000;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.copy{
+    position: relative;
+    top: 20px;
+    color: white;
+}
+
+
+
+
+@keyframes slider{
+    0%{
+        right:0px
+    }
+    25%{
+        right: 300px;
+    }
+    50%{
+        right:600px
+    }
+    75%{
+        right:900px
+    }
+    100%{
+        right:1200px
+    }
+    
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        display: none;
+    }
+
+    .login-container {
+        text-align: center;
+    }
+
+    .header img {
+        margin-right: 0;
+    }
+
+    .login {
+        margin-right: 0;
+    }
+
+    .login .log {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .desc_saga {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}

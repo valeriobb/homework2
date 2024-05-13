@@ -1,0 +1,397 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background */
+body {
+    background: #8abbe4;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 10px 5%;
+    background: rgb(56, 126, 218);
+    border-bottom: solid;
+    
+}
+
+.header:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.navbar-container {
+    flex: 2;
+}
+
+.login-container {
+    flex: 1;
+    text-align: right;
+}
+
+.login {
+    margin-right: 20px;
+}
+
+.header img {
+    margin-right: 15%;
+}
+
+.login {
+    text-align: center;
+    margin-left: auto;
+}
+
+.login .profilo {
+    color: #000000;
+    margin-left: 20px;
+    font-style: oblique;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login .log {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: #0011ff;
+    background-color: #f12424;
+    border: solid;
+}
+
+.login .log:hover {
+    background-color: #0011ff;
+    color: #ffffff;
+}
+
+.login .logout {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ff0000;
+    font-size: 0.9rem;
+}
+
+.navbar ul {
+    list-style: none;
+    background: transparent;
+    margin-left: auto;
+    margin-right: 5%;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    font-size: 1rem;
+    color: #000000;
+    text-decoration: none;
+    transition: .3s;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    color: #000a97;
+}
+
+
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;        
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-170px);
+        opacity: 0;        
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.link{
+    text-decoration: none;
+    color:#000000;
+}
+
+
+.messerror {
+    margin-top: 125px;
+    text-align: center; /* Centra il testo */
+    background-color: #ffcccc; /* Sfondo rosso */
+    color: #ff0000; /* Testo rosso */
+    padding: 10px; /* Spazio intorno al contenuto */
+    
+}
+
+.messerror a{
+    
+    color: #ff0000; /* Testo rosso */
+}
+
+
+.home {
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.search-container {
+    margin-top: 180px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.search-container h2 {
+    margin-bottom: 10px;
+}
+
+.search-container form {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+.add-post-link {
+    margin-top: 100px;
+    color: #007bff; /* Colore del testo */
+    text-decoration: none; /* Rimuove il sottolineato */
+    font-size: 18px;
+}
+
+.recente{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.post-container {
+    display: flex;
+    width: max-content;
+    background: #0056b3;
+    border-radius: 20px;
+    margin: 0 auto; /* Imposta i margini automatici per centrare il container */
+    justify-content: center; /* Centra i contenuti lungo l'asse principale (orizzontale) */
+}
+
+
+.post {
+    display: flex;
+    max-width: 700px;
+    margin: 20px;
+}
+.post-image {
+    flex: 1;
+    margin-right: 20px;
+}
+.post-image img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+.post-details {
+    flex: 2;
+}
+.post-title {
+    font-size: 28px;
+    margin-top: 0;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+.post-text {
+    margin-top: 5px;
+    font-size: 16px;
+    font-style:oblique;
+}
+.post-author, .post-date {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.post-date{
+    margin-bottom: 10px;
+}
+
+.read-more {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.4s;
+    
+}
+.read-more:hover{
+    color: rgb(255, 0, 0);
+}
+
+.additional-posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.additional-post {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #0056b3;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.additional-post .post-image {
+    flex: 0 0 30%;
+    margin-right: 20px;
+}
+
+.additional-post .post-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.additional-post .post-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.additional-post .post-title {
+    font-size: 24px;
+    margin-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.additional-post .post-text {
+    margin-top: 5px;
+    font-size: 16px;
+    font-style: oblique;
+    color: rgb(0, 0, 0);
+}
+
+.additional-post .post-author,
+.additional-post .post-date {
+    
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+
+.additional-post .post-date {
+    margin-bottom: 10px;
+}
+
+.additional-post .read-more {
+   
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.additional-post .read-more:hover {
+    color: red;
+}
+
+.allpost{
+    margin-top: 5%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.footer{
+    background:rgb(56, 126, 218);
+    text-align: center;
+    margin-top: 30px;
+    padding: 0;
+    width: 100%;
+    height:fit-content;
+    font-size: 20px;
+    font-style: oblique;
+    border-color: #000000;
+    border-top: solid;
+}
+
+.copy{
+    top: 20px;
+    padding: 1.03%;
+    color: rgb(0, 0, 0);
+
+    font-weight: bold;
+    
+}
+
+

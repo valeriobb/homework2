@@ -1,0 +1,97 @@
+/* Reset dei margini e dei padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stile del body */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #8abbe4;
+    color: #333;
+}
+
+/* Stile del container principale */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Spaziatura interna del form */
+.form-group {
+    margin-bottom: 30px;
+}
+
+/* Stile degli input */
+.form-control {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Stile del pulsante */
+.form-btn {
+    text-align: center;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: #e74031;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff1900;
+}
+
+/* Stile degli alert */
+.alert {
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.alert-danger {
+    background-color: #ffbebe;
+    color: #721c24;
+    border: 1px solid #ff7d7d;
+}
+
+/* Stile del link di registrazione */
+.signup-link, .login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link a, .login-link a{
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.signup-link a:hover, .login-link a:hover {
+    text-decoration: underline;
+}
+
+.back-home, .back-home a{
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.back-home a:hover{
+    color: #e74031;
+}
